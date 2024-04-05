@@ -1,0 +1,13 @@
+mpi4py
+mpi_master_slave
+numpy
+matplotlib
+opencv-python
+pandas
+python-dateutil
+scikit-build
+scikit-image
+scikit-learn
+tensorflow
+pep8
+pylint
