@@ -10,6 +10,12 @@ This repository, **GalacticConstraints**, is part of an ongoing effort to reorga
 - [Overview](#overview)
 - [References](#references)
 
+# Status<a id ="status">
+
+## TO DO List:
+This list is primary intended for my use (Matthew Ogden). 
+- [] Update docker image to Python 3.11.
+
 
 # Installation<a id="installation">
 
@@ -47,7 +53,7 @@ python3.11 -m pip install -r requirements.txt
 ```
  
 ## DOCKER IMAGE (BETA)
-Currently, a docker image are being created and tested to work with galacticConstraints project.  If you are familiar with docker images then you may try to use the following.  Our current image is under construction and can be found in a DockerHub [repo](https://hub.docker.com/repository/docker/ogdenm12/beta-2/general). This docker image may or may not work for you and is not fully supported yet.   
+Currently, a docker image are being created and tested to work with galacticConstraints project.  If you are familiar with docker images then you may try to use the following.  Our current image is under construction and can be found in a DockerHub [repo](https://hub.docker.com/repository/docker/ogdenm12/beta-2/general). This docker image may or may not work for you and is not fully supported yet.
 
 
 # Quickstart<a id="Instructions"> 
@@ -58,6 +64,19 @@ Launch the virtual environment before you run code.
 ```
 source venv_gal/bin/activate 
 ```
+
+### Docker + Singularity
+Alternatively, you can use a docker image with Singularity.  Assuming you are a Babbage node at MTSU, you can run the following commands to run the docker image. 
+```
+module load singularity
+
+# For Command Line Interface
+singularity shell /home/mbo2d/images/babbage-beta-2.sif
+
+# For Jupyter Notebook
+singularity exec  --nv /home/mbo2d/images/babbage-beta-2.sif jupyter lab --no-browser --port=7608 
+```
+
 
 # Current Status
 ## Status<a id="status">
